@@ -1,22 +1,24 @@
-# Assignment 3
+# Assignment 4
 
-Q. Design a Tic-Tac-Toe game in python by taking position inputs of both 'X' and 'O' users, displaying the move after each turn and displaying the winner in the end.
+Q. Use recursion to design a program that can automatically place its chance in the previously built tic-tac-toe game and always wins the game.
+Hint: https://www.neverstopbuilding.com/blog/minimax
 
 Example:
 ```
 In: 
-Player X: 4
+Choose X or O
+Player: X
 
+Player: 4
 Out:
    |   |
 -----------
    | X |
 -----------
    |   |
-   
-In:
-Player O: 2
+
 Out: 
+Computer places O at 2
    |   | O
 -----------
    | X |
@@ -24,7 +26,7 @@ Out:
    |   |
 
 In: 
-Player X: 0
+Player: 0
 Out:
  X |   | O
 -----------
@@ -32,23 +34,56 @@ Out:
 -----------
    |   |
    
+Out: 
+Computer places O at 9
+ X |   | O
+-----------
+   | X | 
+-----------
+   |   | O
+
 In:
-Player O: 5
+Player: 5
 Out: 
  X |   | O
 -----------
-   | X | O
+   | X | X
 -----------
-   |   |
+   |   | O
 
-In:
-Player X: 8
 Out: 
+Computer places O at 3
  X |   | O
 -----------
-   | X | O
+ O | X | X
 -----------
-   |   | X
+   |   | O
 
-Player X is the winner!!!
+In:
+Player: 1
+Out: 
+ X | X | O
+-----------
+ O | X | X
+-----------
+   |   | O
+   
+Out: 
+Computer places O at 7
+ X | X | O
+-----------
+ O | X | X
+-----------
+   | O | O
+
+In:
+Player: 6
+Out: 
+ X | X | O
+-----------
+ O | X | X
+-----------
+ X | O | O
+
+The match is drawn!!!
 ```
